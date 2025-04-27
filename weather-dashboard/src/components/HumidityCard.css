@@ -1,0 +1,63 @@
+/* Basic Styling */
+.humidity-card {
+    background: linear-gradient(to right, #9fe5fa, #00aaff);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .humidity-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Header Section */
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .humidity-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .card-header h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Humidity Percentage Section */
+  .humidity-content {
+    position: relative;
+  }
+  
+  .humidity-percentage {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Humidity Bar */
+  .humidity-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .humidity-fill {
+    background-color: #00ccff;
+    transition: height 0.5s ease;
+    width: 100%;
+  }
+  
+  
