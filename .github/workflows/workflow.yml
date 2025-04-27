@@ -7,16 +7,20 @@ on:
   pull_request:
     branches:
       - main
-
+env:
+  dir: /home/runner/work/first_steps_on_aws/weather-dashboard
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      - name: dir
+        run: echo `pwd`
       # Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v3
-
+      - name: Move directory   
+        run: cd ${{ env.dir }}
       # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -25,9 +29,11 @@ jobs:
 
       # Install dependencies
       - name: Install dependencies
-        run: npm install
-        working-directory: /weather-dashboard
+        run: | 
+          cd ${{ env.dir }}
+          npm install
       # Run linting
       - name: Run ESLint
-        run: npm run lint
-        working-directory: /weather-dashboard
+        run: |
+          cd ${{ env.dir }}
+          npm run lint
