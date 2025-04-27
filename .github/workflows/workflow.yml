@@ -26,8 +26,8 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: npm install
-        working-directory: ./first_steps_on_aws/weather-app
+        working-directory: ./first_steps_on_aws/weather-dashboard
       # Run linting
       - name: Run ESLint
         run: npm run lint
-        working-directory: ./first_steps_on_aws/weather-app
+        working-directory: ./first_steps_on_aws/weather-dashboard
