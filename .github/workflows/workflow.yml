@@ -8,7 +8,7 @@ on:
     branches:
       - main
 env:
-  dir: /home/runner/work/first_steps_on_aws/weather-dashboard
+  dir: /home/runner/work/first_steps_on_aws/first_steps_on_aws/weather-dashboard
 jobs:
   build:
     runs-on: ubuntu-latest
