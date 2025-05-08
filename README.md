@@ -18,10 +18,9 @@ A modern **Weather Dashboard** built with **React** and **AWS Amplify**. This ap
 
 - **Frontend**:
   - React.js
-  - Axios (for HTTP requests)
-  - CSS (for styling)
   
 - **Backend**:
+  - Node.js
   - AWS Lambda
   - AWS API Gateway
   - OpenWeatherMap API
@@ -37,7 +36,7 @@ Follow the steps below to get the app running locally on your machine.
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/weather-dashboard.git
+git clone https://github.com/YassineRh-work/first_steps_on_aws.git
 cd weather-dashboard
 ```
 ### 2. Install dependencies:
@@ -85,6 +84,6 @@ amplify publish: Deploy both frontend and backend.
 ## 🖼️ Preview
 Here’s an example of the app’s interface:
 
-![Weather Dashboard Screenshot](https://github.com/YassineRh-work/first_steps_on_aws/tree/main/weather-dashboard/main/preview.png)
+![Weather Dashboard Screenshot](https://github.com/YassineRh-work/first_steps_on_aws/blob/main/preview.png)
 
-You can visit the link : https://main.dquqj4263evly.amplifyapp.com/
+The app is already deployed on this link: https://main.dquqj4263evly.amplifyapp.com/
