@@ -50,19 +50,23 @@ const App = () => {
   const fetchWeatherData = () => {
     setLoading(true);
     setError(null);
-
+  
     axios
-      .get(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`)
+      .get(`https://cef00mv5yf.execute-api.eu-west-3.amazonaws.com/dev/weather`, {
+        params: { city: location },
+      })
       .then((response) => {
         setWeatherData(response.data);
-        setIcon(getWeatherIcon(response.data.weather[0].description)); // Set the correct icon based on description
+        setIcon(getWeatherIcon(response.data.weather[0].description));
         setLoading(false);
       })
       .catch((error) => {
+        console.error(error); // For debugging
         setError('Failed to fetch data');
         setLoading(false);
       });
   };
+  
 
   // Fetch weather data when the component mounts or location changes
   useEffect(() => {

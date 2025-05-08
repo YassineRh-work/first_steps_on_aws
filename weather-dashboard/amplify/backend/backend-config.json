@@ -1,0 +1,51 @@
+{
+  "api": {
+    "weatherapi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "weatherproxy"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "weatherproxy": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_weatherproxy_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "weatherproxy"
+        }
+      ]
+    },
+    "AMPLIFY_function_weatherproxy_openweatherApiKey": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "weatherproxy"
+        }
+      ]
+    },
+    "AMPLIFY_function_weatherproxy_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "weatherproxy"
+        }
+      ]
+    }
+  }
+}

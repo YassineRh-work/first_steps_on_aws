@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-weatherdashboard-dev-0b8d2-authRole",
+      "UnauthRoleArn": "arn:aws:iam::221904544400:role/amplify-weatherdashboard-dev-0b8d2-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::221904544400:role/amplify-weatherdashboard-dev-0b8d2-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-weatherdashboard-dev-0b8d2-deployment",
+      "UnauthRoleName": "amplify-weatherdashboard-dev-0b8d2-unauthRole",
+      "StackName": "amplify-weatherdashboard-dev-0b8d2",
+      "StackId": "arn:aws:cloudformation:eu-west-3:221904544400:stack/amplify-weatherdashboard-dev-0b8d2/6667aa40-2c24-11f0-a6c1-06ad7a218827",
+      "AmplifyAppId": "d30mltdzzhsfxf"
+    },
+    "categories": {
+      "function": {
+        "weatherproxy": {
+          "deploymentBucketName": "amplify-weatherdashboard-dev-0b8d2-deployment",
+          "s3Key": "amplify-builds/weatherproxy-476a5764566f31465a41-build.zip",
+          "openweatherApiKey": "c10e58f33be746fa1bac5b3d9f769a44"
+        }
+      },
+      "api": {
+        "weatherapi": {}
+      }
+    }
+  }
+}
